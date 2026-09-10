@@ -252,27 +252,27 @@ header {
 }
 
 /* ==========================================
-   PÁGINA DE TOURS (TOURS.HTML)
+   PÁGINA DE TOURS (TOURS.HTML) - OPTIMIZADO
    ========================================== */
 .banner-tours {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/Galapagos.jpg') center/cover;
     color: #ffffff;
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .banner-tours h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
 }
 
 .tours-container {
-    max-width: 1100px;
-    margin: 40px auto;
+    max-width: 950px; /* Ancho máximo más recogido */
+    margin: 30px auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px; /* Menos espacio entre tarjetas */
 }
 
 .tour-detail-card {
@@ -280,45 +280,78 @@ header {
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 240px; /* Altura fija para evitar imágenes gigantes */
 }
 
 .tour-detail-card img {
-    width: 40%;
-    object-fit: cover;
-    min-height: 280px;
+    width: 35%; /* La imagen ocupa poco más de un tercio */
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen limpiamente */
 }
 
 .tour-info {
-    padding: 25px;
+    padding: 20px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 65%;
 }
 
 .tour-info h2 {
     color: #2c3e50;
-    margin-bottom: 8px;
+    font-size: 1.35rem;
+    margin-bottom: 6px;
 }
 
 .tour-info .precio {
     color: #27ae60;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
     display: block;
+}
+
+.tour-info p {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.4;
+    margin-bottom: 10px;
 }
 
 .tour-info ul {
     list-style: none;
-    margin: 15px 0 20px;
+    margin-bottom: 15px;
 }
 
 .tour-info li {
-    margin-bottom: 6px;
-    color: #555555;
+    font-size: 0.85rem;
+    color: #444444;
+    margin-bottom: 3px;
+}
+
+/* Botón compacto */
+.tour-info .btn-hero {
+    align-self: flex-start;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+}
+
+/* Versión Celular */
+@media (max-width: 768px) {
+    .tour-detail-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .tour-detail-card img {
+        width: 100%;
+        height: 180px;
+    }
+    .tour-info {
+        width: 100%;
+        padding: 18px;
+    }
 }
 
 /* ==========================================
