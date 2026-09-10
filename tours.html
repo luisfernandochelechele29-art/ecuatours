@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tours y Paquetes - Ecuatours</title>
+    <title>Ecuatours - Paquetes Turísticos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
-    <!-- NAVEGACIÓN -->
+    <!-- MENÚ NAVEGACIÓN -->
     <header>
         <div class="logo">
-            <img src="images/Logo.jpg" alt="Ecuatours Logo">
+            <a href="index.html"><img src="images/Logo.jpg" alt="Ecuatours Logo"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav class="nav-links">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#inicio">Inicio</a></li>
                 <li><a href="index.html#destinos">Destinos</a></li>
                 <li><a href="tours.html" class="active">Tours</a></li>
                 <li><a href="index.html#contacto">Contacto</a></li>
@@ -24,68 +29,112 @@
         </nav>
     </header>
 
-    <!-- ENCABEZADO DE PÁGINA -->
-    <section class="page-header">
+    <!-- BANNER DE PAQUETES -->
+    <section class="banner-tours">
         <h1>Nuestros Paquetes Turísticos</h1>
-        <p>Encuentra el itinerario perfecto para tu próxima aventura en Ecuador</p>
+        <p>Explora Ecuador con todo incluido y guías certificados</p>
     </section>
 
-    <!-- LISTA DETALLADA DE TOURS -->
-    <main class="contenedor-tours">
+    <!-- DETALLE DE TOURS -->
+    <main class="tours-container">
 
-        <!-- Tour Galápagos -->
-        <article class="tour-item" id="galapagos">
+        <!-- GALÁPAGOS -->
+        <article class="tour-detail-card" id="galapagos">
             <img src="images/Galapagos.jpg" alt="Tour Galápagos">
             <div class="tour-info">
-                <h2>Tour Islas Galápagos (4 Días / 3 Noches)</h2>
-                <p>Incluye hospedaje, guías naturalistas certificados, transporte marítimo entre islas y snorkel con tortugas marinas y leones marinos.</p>
+                <h2>Tour Islas Galápagos - 5 Días / 4 Noches</h2>
+                <span class="precio">$850 USD / persona</span>
+                <p>Descubre la fauna endémica de las islas encantadas, avistamiento de tortugas gigantes y esnórquel con lobos marinos.</p>
                 <ul>
-                    <li>✔ Salidas diarias desde Quito y Guayaquil</li>
-                    <li>✔ Alimentación completa incluida</li>
+                    <li>✔ Alojamientos y desayunos incluidos</li>
+                    <li>✔ Traslados interislas en lancha rápida</li>
+                    <li>✔ Guía naturalista certificado por el Parque Nacional</li>
+                    <li>✔ Equipo de esnórquel</li>
                 </ul>
-                <a href="index.html#contacto" class="btn-card">Reservar Tour</a>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Galápagos" class="btn-hero" target="_blank">Reservar este Tour</a>
             </div>
         </article>
 
-        <!-- Tour Cotopaxi -->
-        <article class="tour-item" id="cotopaxi">
+        <!-- COTOPAXI -->
+        <article class="tour-detail-card" id="cotopaxi">
             <img src="images/Cotopaxi.jpg" alt="Tour Cotopaxi">
             <div class="tour-info">
-                <h2>Full Day Volcán Cotopaxi</h2>
-                <p>Caminata guiada hacia el refugio José Rivas (4.860 msnm), visita a la laguna de Limpiopungo y equipo de senderismo básico.</p>
+                <h2>Aventura Volcán Cotopaxi - Full Day</h2>
+                <span class="precio">$65 USD / persona</span>
+                <p>Ascenso hasta el refugio José Rivas (4,864 m) y recorrido en bicicleta por las faldas del volcán hasta la Laguna de Limpiopungo.</p>
                 <ul>
-                    <li>✔ Salida desde Quito</li>
-                    <li>✔ Almuerzo típico andino incluido</li>
+                    <li>✔ Transporte privado Quito - Cotopaxi - Quito</li>
+                    <li>✔ Almuerzo típico andino</li>
+                    <li>✔ Bicicleta de montaña y casco</li>
+                    <li>✔ Guía de montaña experimentado</li>
                 </ul>
-                <a href="index.html#contacto" class="btn-card">Reservar Tour</a>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Cotopaxi" class="btn-hero" target="_blank">Reservar este Tour</a>
             </div>
         </article>
 
-        <!-- Tour Baños -->
-        <article class="tour-item" id="banos">
+        <!-- BAÑOS -->
+        <article class="tour-detail-card" id="banos">
             <img src="images/Baños.jpg" alt="Tour Baños">
             <div class="tour-info">
-                <h2>Aventura en Baños de Agua Santa (2 Días)</h2>
-                <p>Ruta de las Cascadas, Pailón del Diablo, Columpio del Fin del Mundo y deportes de aventura (canopy o rafting).</p>
+                <h2>Baños Extremo & Cascadas - 3 Días / 2 Noches</h2>
+                <span class="precio">$180 USD / persona</span>
+                <p>Ruta de las Cascadas, Pailón del Diablo, Mirador Casa del Árbol (Columpio del fin del mundo) y deportes de aventura.</p>
                 <ul>
-                    <li>✔ Alojamiento con desayuno</li>
-                    <li>✔ Entradas a atractivos incluidas</li>
+                    <li>✔ Hospedaje en hotel céntrico</li>
+                    <li>✔ Tour en chiva playera por la ruta de las cascadas</li>
+                    <li>✔ Sesión de Canopy o Rafting a elección</li>
+                    <li>✔ Desayunos incluidos</li>
                 </ul>
-                <a href="index.html#contacto" class="btn-card">Reservar Tour</a>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Baños" class="btn-hero" target="_blank">Reservar este Tour</a>
             </div>
         </article>
 
-        <!-- Tour Amazonía -->
-        <article class="tour-item" id="amazonia">
+        <!-- AMAZONÍA -->
+        <article class="tour-detail-card" id="amazonia">
             <img src="images/Amazonia.jpg" alt="Tour Amazonía">
             <div class="tour-info">
-                <h2>Expedición Amazonía (3 Días)</h2>
-                <p>Caminatas nocturnas en la selva, avistamiento de aves y caimanes, convivencia con comunidades nativas.</p>
+                <h2>Exploración Selva Yasuní - 4 Días / 3 Noches</h2>
+                <span class="precio">$420 USD / persona</span>
+                <p>Caminatas nocturnas en la selva, avistamiento de aves y delfines rosados, y convivencia con comunidades indígenas ancestrales.</p>
                 <ul>
-                    <li>✔ Lodge en medio de la selva</li>
-                    <li>✔ Guía nativo bilingüe</li>
+                    <li>✔ Alimentación completa (Desayunos, Almuerzos y Cenas)</li>
+                    <li>✔ Hospedaje en Lodge ecológico</li>
+                    <li>✔ Transporte fluvial en canoa motorizada</li>
+                    <li>✔ Botas de caucho y chalecos de salvamento</li>
                 </ul>
-                <a href="index.html#contacto" class="btn-card">Reservar Tour</a>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Amazonía" class="btn-hero" target="_blank">Reservar este Tour</a>
+            </div>
+        </article>
+
+        <!-- QUITO -->
+        <article class="tour-detail-card" id="quito">
+            <img src="images/Quito.jpg" alt="Tour Quito">
+            <div class="tour-info">
+                <h2>Quito Colonial & Mitad del Mundo - Full Day</h2>
+                <span class="precio">$45 USD / persona</span>
+                <p>Recorrido por las iglesias del Centro Histórico, Mirador del Panecillo y experimento de latitud 0°0'0" en la Mitad del Mundo.</p>
+                <ul>
+                    <li>✔ Entradas a la Compañía de Jesús y Complejo Mitad del Mundo</li>
+                    <li>✔ Transporte en autobús turístico</li>
+                    <li>✔ Guía cultural especializado</li>
+                </ul>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Quito" class="btn-hero" target="_blank">Reservar este Tour</a>
+            </div>
+        </article>
+
+        <!-- CUENCA -->
+        <article class="tour-detail-card" id="cuenca">
+            <img src="images/Cuenca.jpg" alt="Tour Cuenca">
+            <div class="tour-info">
+                <h2>Cuenca Cultural & Parque El Cajas - 2 Días / 1 Noche</h2>
+                <span class="precio">$150 USD / persona</span>
+                <p>Visita a la Catedral de la Inmaculada Concepción, talleres de sombreros de paja toquilla y senderismo en el Parque Nacional Cajas.</p>
+                <ul>
+                    <li>✔ Noche de hospedaje con desayuno</li>
+                    <li>✔ Excursión guiada por las lagunas del Parque Cajas</li>
+                    <li>✔ Recorrido por el centro histórico y mirador Turi</li>
+                </ul>
+                <a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20reservar%20el%20Tour%20Cuenca" class="btn-hero" target="_blank">Reservar este Tour</a>
             </div>
         </article>
 
@@ -98,7 +147,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>
