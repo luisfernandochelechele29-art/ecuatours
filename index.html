@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuatours - Agencia de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+    <!-- MENÚ NAVEGACIÓN -->
+    <header>
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Ecuatours Logo">
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER SLIDER -->
+    <section class="hero-slider" id="inicio">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="images/Galapagos.jpg" alt="Galápagos">
+                <div class="slide-content">
+                    <h2>Descubre Ecuador</h2>
+                    <p>Vive experiencias inolvidables en las Islas Galápagos</p>
+                    <a href="#destinos" class="btn-hero">Ver Destinos</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/Cotopaxi.jpg" alt="Cotopaxi">
+                <div class="slide-content">
+                    <h2>Aventura en los Andes</h2>
+                    <p>Siente la adrenalina cerca del volcán Cotopaxi</p>
+                    <a href="#destinos" class="btn-hero">Ver Destinos</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/Amazonia.jpg" alt="Amazonía">
+                <div class="slide-content">
+                    <h2>Explora la Selva</h2>
+                    <p>Sumérgete en la biodiversidad de la Amazonía</p>
+                    <a href="#destinos" class="btn-hero">Ver Destinos</a>
+                </div>
+            </div>
+        </div>
+        <button class="prev-btn" id="prevBtn">&#10094;</button>
+        <button class="next-btn" id="nextBtn">&#10095;</button>
+    </section>
+
+    <!-- SECCIÓN DE DESTINOS -->
+    <section class="destinos" id="destinos">
+        <h2>Nuestros Destinos</h2>
+        <div class="contenedor-destinos">
+
+            <div class="card">
+                <img src="images/Galapagos.jpg" alt="Islas Galápagos">
+                <div class="info">
+                    <h3>Galápagos</h3>
+                    <p>Descubre un paraíso natural único en el mundo lleno de vida silvestre.</p>
+                    <a href="tours.html#galapagos" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Cotopaxi.jpg" alt="Volcán Cotopaxi">
+                <div class="info">
+                    <h3>Cotopaxi</h3>
+                    <p>Uno de los volcanes activos más altos del planeta.</p>
+                    <a href="tours.html#cotopaxi" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Baños.jpg" alt="Baños de Agua Santa">
+                <div class="info">
+                    <h3>Baños de Agua Santa</h3>
+                    <p>La capital de la aventura, cascadas y deportes extremos.</p>
+                    <a href="tours.html#banos" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Amazonia.jpg" alt="Amazonía Ecuatoriana">
+                <div class="info">
+                    <h3>Amazonía</h3>
+                    <p>Adéntrate en la biodiversidad de la selva tropical ecuatoriana.</p>
+                    <a href="tours.html#amazonia" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Quito.jpg" alt="Centro Histórico de Quito">
+                <div class="info">
+                    <h3>Quito</h3>
+                    <p>Explora el Centro Histórico mejor conservado de América Latina.</p>
+                    <a href="tours.html#quito" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Cuenca.jpg" alt="Cuenca">
+                <div class="info">
+                    <h3>Cuenca</h3>
+                    <p>Disfruta de la arquitectura colonial, cultura y elegancia de la Atenas del Ecuador.</p>
+                    <a href="tours.html#cuenca" class="btn-card">Más Información</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO Y FOOTER -->
+    <footer id="contacto">
+        <div class="contenedor-footer">
+            <div class="info-contacto">
+                <h3>Ecuatours</h3>
+                <p>Tu agencia de viajes de confianza en Ecuador.</p>
+                <p>📍 Quito / Guayaquil, Ecuador</p>
+                <p>📞 +593 99 999 9999</p>
+                <p>✉️ info@ecuatours.com</p>
+            </div>
+
+            <div class="formulario-contacto">
+                <h3>Contáctanos</h3>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo Electrónico" required>
+                    <textarea placeholder="¿A qué destino deseas viajar?" rows="4" required></textarea>
+                    <button type="submit" class="btn-hero">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Ecuatours - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="slider.js"></script>
+    <script src="menu.js"></script>
+   <!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/593999999999?text=Hola%20Ecuatours,%20quiero%20información%20sobre%20sus%20tours" 
+   class="btn-whatsapp" 
+   target="_blank" 
+   aria-label="Contactar por WhatsApp">
+    💬
+</a> 
+</body>
+</html>
